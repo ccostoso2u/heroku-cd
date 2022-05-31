@@ -12,7 +12,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm install -g server; serve -s build",
+    "heroku-postbuild": "npm run build",
+    "postinstall": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
